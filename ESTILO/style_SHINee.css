@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+    --color-fondo: #439A97;
+    --color-primario: #62B6B7;
+    --color-secundario: #97DECE;
+    --color-acento: #124170;
+    --color-texto:#262626;
+    --color-texto-titulos:#62e7c4;
+    --color-cajas:rgb(152, 232, 224);
+    --color-cajas-dos:#99e3d0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-fondo);
+    font-family: "Josefin Sans", sans-serif;
+}
+header{
+    background-color: var(--color-acento);
+    color: var(--color-texto-titulos);
+    height: auto;
+    text-align: left;
+}
+.header-derecha{
+    background-color: var(--color-acento);
+    color: var(--color-texto-titulos);
+    height: auto;
+    text-align: right;
+}
+nav{
+    text-align: center;
+    background-color: var(--color-primario);
+    height: auto;
+    padding: 20px;
+}
+nav ul li{
+    width: 120px;
+    display: inline-block;
+    background-color: var(--color-cajas);
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--color-fondo);
+    border-radius: 20px;
+}
+nav ul li a:link,nav ul li a:visited{
+    text-decoration: none;
+    color:var(--color-texto);
+    font-weight: bolder;
+}
+main{
+    padding: 50px;
+    text-align: justify;
+}
+main section{
+    background-color: var(--color-secundario);
+    margin-bottom: 30px;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color:var(--color-texto);
+    text-align: left;
+}
+h1, h2{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    font-style: normal;
+}
+.h1_derecha{
+    text-align: right;
+}
+main section h2{
+    margin-bottom: auto;
+}
+main section h3{
+    margin-bottom: auto;
+    margin-top: 10px;
+}
+main section p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color:var(--color-acento);
+    color:var(--color-texto);
+    padding: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+.ul-espacios{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.box-oscuro{
+    background-color: var(--color-cajas-dos);
+}
+#seccion_tabla_simple{
+  overflow: auto;  
+}
+#simple{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #69dee6;
+    border-collapse: unset;
+    border-spacing: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b9ffff;
+}
+#simple th{
+    background-color: #2ca5d1;
+    text-align: center;
+}
+#simple th, #simple td{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #031a31;
+    background-color: #137ba6;
+    padding: 5px; 
+    color: #f1fffc;
+}
+#tabla2, #tabla2 th, #tabla2 td{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1c5793;
+    border-collapse: collapse;
+}
+#tabla2{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tabla2 th{
+    background-color: #124170;
+    color: #c0ffef;
+    text-align: center;
+}
+#tabla2 td{
+    background-color: #c7fef0;
+    color: #0c355f;
+}
+#tabla2 td, #tabla2 th{
+    width: 150px;
+    padding: 10px;
+}
+
+#tabla3{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #124170;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tabla3 th, tabla3 td{
+    padding: 8px;
+    height: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #31d5bd;
+}
+#tabla3 th{
+    background-color: #c3f9dd;
+    color: #053548;
+    font-weight: bolder;
+}
+#tabla3 tbody tr:nth-child(odd){
+    background-color: #0d3247;
+    color: #F5FBE6;
+}
+#tabla3 tbody tr:nth-child(even){
+    background-color: #a0e3cc;
+    color:#F6F0D7;
+}
+.desbordamiento{
+    overflow: auto;
+}
+
+.espaciado-superior{
+    margin-top: 30px;
+}
+.imagen-medium{
+    width: 23%;
+    height: auto;
+}
+.imagen-small{
+    width: 10%;
+    height: auto;
+}
+.imagen-xsmall{
+    width: 7%;
+    height: auto;
+}
+.centrar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alineacion-centrada{
+    text-align: center;
+}
+.imagen-flotante-derecha{
+    float: right;
+    margin-top: 15px;
+}
+.imagen-flotante-izquierda{
+    float: left;
+    margin-right: 20px;
+}
+.imagen-circular{
+    border-radius: 50%;
+}
+.imagen-bordes-redondeados{
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #C5D89D
+}
+.imagen-margenes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+alineacion-centrada{
+    text-align: center;
+}
+
+.imagen-filtro-grices{
+    filter: grayscale(100%);
+}
+.imagen-filtro-sepia{
+    filter: sepia(100%);
+}
+.imagen-filtro-brillo{
+    filter: brightness(120%);
+}
+.imagen-filtro-contraste{
+    filter: contrast(150%);
+}
+.imagen-filtro-saturacion{
+    filter: saturate(150%);
+}
+.imagen-filtro-negativo{
+    filter: invert(100%);
+}
+.imagen-filtro-blur{
+    filter: blur(2px);
+}
+.imagen-filtro-opacidad{
+    filter: opacity(50%);
+}
+.imagen-filtro-sombra{
+    filter: drop-shadow(10px 10px 10px #cfcfcf);
+}
+.fondo-section{
+    width: 70%;
+    background-image: url(../img/FONDO.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #F6F0D7;
+}
+.fondo-section p{
+    padding-left: auto;
+    padding-right: auto;
+    line-height: 150%;
+}
+.fondo-section h2{
+    text-align: center;
+    font-size: 36px
+}
+.box-links{
+    background-color: transparent;
+}
+.centrar-media{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.video-media{
+    width: 30%;
+    height: auto;
+}
+.ico-img img{
+    width: 32px;
+    height: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.img-header{
+    width: 32px;
+    height: auto;
+    margin: 20px;
+}
+.main{
+    text-align: left;
+}
+.lista-de-musica{
+    width: 30%;
+    min-height: auto;
+    height: 600px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: auto;
+}
+.p-lista-de-musica{
+    margin-top: 30px;
+}
+.musica{
+    width: 30%;
+    background-color: transparent;
+    display: inline-flexbox;
+    margin: 10px;
+}
+.imagenes-SHINee{
+    height: auto;
+    width: 20%;
+}
